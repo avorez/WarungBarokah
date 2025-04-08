@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasir Warung Barokah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Kasir Warung Barokah</h1>
+
+  <section class="form-section">
+    <h2>Tambah Produk Baru</h2>
+    <input type="text" id="nama-produk" placeholder="Nama produk" />
+    <input type="number" id="harga-produk" placeholder="Harga" />
+    <button onclick="tambahProdukBaru()">Tambah Produk</button>
+  </section>
+
+  <section class="produk-section">
+    <h2>Daftar Produk</h2>
+    <input type="text" id="search" placeholder="Cari produk..." />
+    <div id="produk-list"></div>
+  </section>
+
+  <section class="keranjang-section">
+    <h2>Keranjang</h2>
+    <ul id="keranjang-list"></ul>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <section class="riwayat-section">
+    <h2>Riwayat Transaksi</h2>
+    <ul id="riwayat-list"></ul>
+    <button onclick="downloadRiwayat()">Download Rekap Harian</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
